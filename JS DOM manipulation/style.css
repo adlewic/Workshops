@@ -1,0 +1,22 @@
+body{
+	font-family: Helvetica;
+}
+
+
+form{
+
+	border: black 1px solid;
+	width: 300px;
+	height: 300px;
+	float: left;
+	text-align: center;
+}
+
+div{
+
+	border: black 1px solid;
+	width: 300px;
+	height: 300px;
+	float: left;
+	text-align: center;
+}

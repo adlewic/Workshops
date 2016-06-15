@@ -1,14 +1,6 @@
-// function isvalidDay(){
+// -----------------------------User Name and Password------------------------------
+// username=imelda  || password = 12345  ---- to get ACCESS 
 
-// 	var x =document.getElementById("day").value;
-// 	if (x == null || x == "") {
-//         console.log("Day must be filled out");
-//         return false;
-// 		 }	 
-// 	// else if (x ==  ) {
-//  //       new RegExp()
-//  //       return pattern.test(emailAddress);
-//  //    }	 
 
 function validation(){
 	var password= document.getElementById("password").value
@@ -21,6 +13,24 @@ function validation(){
 	} else if (password !== "12345") {
 		alert("INCORRECT password")
 	} else if(password == "12345" || username =="imelda")  {
-		alert("ACCESS")
+		alert("PREMIUM ACCESS")
 	}
 }
+
+// -----------------------  Keypressed Numers & Letters  ----------------------------
+	
+// doesn't work :( but it's ok one day will work ...LOL 
+
+// function teclado(){
+
+// 	var letters= "/[a-zA-Z]/"
+// 	// var numbers= "/^[a-zA-Z]"
+// 	var text = document.getElementById("inputtext").value
+// 	if (text.value.match(letters).{
+// 		alert("LETTERS")
+// 	}else if (text.value.match(numbers){
+// 		alert("NUMBERS")
+// 	}
+// }
+
+
