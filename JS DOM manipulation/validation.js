@@ -21,16 +21,16 @@ function validation(){
 	
 // doesn't work :( but it's ok one day will work ...LOL 
 
-// function teclado(){
+function teclado(){
 
-// 	var letters= "/[a-zA-Z]/"
-// 	// var numbers= "/^[a-zA-Z]"
-// 	var text = document.getElementById("inputtext").value
-// 	if (text.value.match(letters).{
-// 		alert("LETTERS")
-// 	}else if (text.value.match(numbers){
-// 		alert("NUMBERS")
-// 	}
-// }
+	var letters = "/[a-zA-Z]/"
+	var numbers = "/[0-9]/"
+	var text = document.getElementById("inputtext").value
+	if (text.value.match(letters).{
+		alert("LETTERS")
+	}else if (text.value.match(numbers){
+		alert("NUMBERS")
+	}
+}
 
 
