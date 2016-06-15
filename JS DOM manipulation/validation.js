@@ -1,3 +1,6 @@
+
+
+
 // -----------------------------User Name and Password------------------------------
 // username=imelda  || password = 12345  ---- to get ACCESS 
 
@@ -16,21 +19,4 @@ function validation(){
 		alert("PREMIUM ACCESS")
 	}
 }
-
-// -----------------------  Keypressed Numers & Letters  ----------------------------
-	
-// doesn't work :( but it's ok one day will work ...LOL 
-
-function teclado(){
-
-	var letters = "/[a-zA-Z]/"
-	var numbers = "/[0-9]/"
-	var text = document.getElementById("inputtext").value
-	if (text.value.match(letters).{
-		alert("LETTERS")
-	}else if (text.value.match(numbers){
-		alert("NUMBERS")
-	}
-}
-
 
