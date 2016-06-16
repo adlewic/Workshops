@@ -1,60 +1,31 @@
-//   function parseDate(str) {
-//  	var y = str.substr(0,4),
-//  	m = str.substr(4,2) - 1,
-//  	d = str.substr(6,2);
-//  	var D = new Date(y,m,d);
-//  return (D.getFullYear() == y && D.getMonth() == m && D.getDate() == d) ? D : false;
-// }
 
-// console.log(parseDate('20150131')); // returns Sat Jan 31 2015 00:00:00 GMT+0100 (W. Europe Standard Time)
-// // console.log(parseDate('20150231')); // returns false
-// dd/mm/yyyy
-// 12345678910
+// -------------------------Date Validation-------------------------
 
-// function validationdate(){
+//--parseInt-- works so much better for this exercise 
+// because only reads -numbers- not letters or characters 
+// is one step less in the validation 
 
-// var textdate =document.getElementById("textdate").value
-// var res = textdate.split("/"){
+window.onload = function() {
+	document.getElementById("submit").onclick = function() {
+		var dateString = document.getElementById("dateString").value
+		var division = dateString.split("/")
+		var dd = parseInt(division[0],10)
+		var mm = parseInt(division[1],10)
+		var yyyy  = parseInt(division[2],10)
 
-// var dd = textdate.substr(2,10)
-// var mm =textdate.substr(5,10)
-// var yyyy =textdate.substr(10)
-
-// }
-
-
-function alldatetext(separatedate){
-
-	var dd =separatedate.substr(2,2)
-	var mm =separatedate.substr(6,2)
-	var yy = separatedate.substr(10,7)
-	var theAllDate = newdate(dd,mm,yy)
-
-	return(theAllDate.getFullYear()== yy &&
-		   theAllDate.getMonth() == mm &&
-		   theAllDate.getDate() == dd &&)
-}
-
-	if (separatedate.length !==10{
-		return false
-	} 
-	if (separatedate.substr(2,3) !=='/' || separatedate.substring(5,6) !=='/'){
-		return false
-	}
-
-	if (yy< 1000  || year 3000){
-		return false
+		if (division == null || division ==""){
+			alert("DATE must be filled")
+		}else if (dd < 1 || dd > 31) {
+			// return false
+			alert("invalid DAY")
+		} else if (mm == 1 || mm > 12 ){
+			alert("invalid MONTH")
+			// return false
+		} else if (yyyy < 1900 || yyyy > 2020) {
+			alert("invalid YEAR")
+			// return false
+		} else{
+			alert("THANKS!")
 		}
 	}
-
-
-function validationdate (){
-	var textdate = document.getElementById('textdate').value
-	if(textdate(separatedate)){
-		alert("OK")
-	}
-	else {
-		alert("Invalid format")
-	}
 }
-

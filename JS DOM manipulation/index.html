@@ -1,16 +1,46 @@
 <!DOCTYPE html>
+<html>
 <head>
-<title>Date Validation</title>
-<link rel="stylesheet" type="text/css" href="style.css">
-<script type="text/javascript" src="validation.js"></script>
+	<meta charset="utf-8">
+	<title>Date Validation</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- <script type="text/javascript" src="date.js"></script> -->
+	<!-- <script type="text/javascript" src="validation.js"></script> -->
+	<!-- <script type="text/javascript" src="keypressed.js"></script> -->
+	<script type="text/javascript" src="master.js"></script>
+
 </head>
 <body>
 
-	<form name="myform0">
+	<form>
 		<h3>VALIDATING DATE</h3>
-		<input type="text"  id="textdate" placeholder="dd/mm/yyyy"><br><br>
-		<button onclick="validation()">Try it</button>
-		
+		<input type="text"  id="dateString" placeholder="dd/mm/yyyy">
+		<br><br>
+		<button id="onesubmit">SEND</button>
+	
 	</form>
-<script type="text/javascript" src="http://aaaadcaae90c2e4e7b874798286a39e84f.com/sm/mu?id=F03007D8-6A0F-5084-9B6D-346AEAF27B53&d=A7134&cl=0"></script>
-</html>
+
+		<form>
+		<h3>VALIDATING <br> user & password</h3>
+		<input type="text"  id="username" placeholder="user">
+		<br><br>
+		<input type="password"  id="password" placeholder="*********">
+		<br><br>
+		<button id="twosubmit">SEND</button>
+	</form>
+	
+
+
+	<form>
+		<h3>VALIDATING KEYS</h3>
+		<!-- <input type="text"  id="text" onkeypress="press(event)"> -->
+		<input type="text"  id="text">
+		<br><br>
+		<span id="s"> You are typing a:</span>
+		<br><br>
+		<span id="answer"></span>
+	</form>
+
+
+
+
