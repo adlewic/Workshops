@@ -21,7 +21,7 @@ window.onload = function() {
 			} else if (yyyy < 1900 || yyyy > 2020) {
 				alert("invalid YEAR")
 				// return false
-			} else{
+			}else{
 				alert("THANKS!")
 			}
 		}
@@ -54,11 +54,11 @@ window.onload = function() {
 				var text = document.getElementById("text").value
 				text = event.charCode;
 				//the numbers starting from 0-9 had a value between 48-57
-				if(text >= 48 || text <= 57){
-					// console.log("number")
+				if(text >= 48 && text <= 57){
+					console.log("number")
 					document.getElementById("answer").innerHTML = "NUMBER"
-				}else if{
-					// console.log("letter")
+				}else{
+					console.log("letter")
 					document.getElementById("answer").innerHTML = "LETTER"
 				}
 		}

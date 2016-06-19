@@ -7,10 +7,8 @@ function myclock (){
 
 
 // adding a cero to minutes and seconds 
-
 	m=checkTime(m)
 	s=checkTime(s)
-
 
 	function checkTime(i)
 	{
@@ -18,8 +16,6 @@ function myclock (){
 		{ i="0" + i}
 		return i
 	}
-
-
 
 	// document.getElementById("clock").innerHTML=h +":"+ m +":"+ s
 	document.getElementById("hours").innerHTML = h 
@@ -29,6 +25,7 @@ function myclock (){
 	t=setTimeout('myclock()', 500)
 }
 
+
 window.onload = function(){
-	myclock();
-};
+	myclock()
+}
