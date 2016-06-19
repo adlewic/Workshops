@@ -43,17 +43,10 @@ function validation(event){
 		if ((testingU == true) && (password == "12345678") ){
 			$("h1").html("TOTAL ACCESS")
 		}
-
-
-
-
 	}
 
 	$("#submit").click(function(event){
 			validation(event)
 
-	})
-
-
-	
+	})	
 })
